@@ -25,7 +25,7 @@ main{max-width:1050px;width:calc(100% - 28px);margin:0 auto 28px;background:var(
 .mode .num{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#dcefee;color:#123f63;font-weight:800;margin-bottom:8px}
 .mode h3{font-size:15px;margin:0 0 6px;color:#123f63}.mode p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
 .mode input{position:absolute;opacity:0;pointer-events:none}
-.info{background:#fff9ed;border:1px solid #ead9ae;border-radius:13px;padding:11px 14px;font-size:12px;line-height:1.9;color:#80602b;margin:0 0 18px}
+
 .upload{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:218px;border:2px dashed #83bdbc;background:radial-gradient(circle at 50% 0,#eaf5f4 0,transparent 62%),linear-gradient(180deg,#fff,#f5faf9);border-radius:23px;padding:27px 16px;text-align:center;cursor:pointer;transition:transform .22s,border-color .22s,box-shadow .22s,background .22s;overflow:hidden}
 .upload:before{content:"";position:absolute;inset:8px;border:1px solid #dcebea;border-radius:16px;pointer-events:none}
 .upload:hover,.upload.drag{transform:translateY(-2px);border-color:#0f8588;background:linear-gradient(145deg,#eff8f7,#f6f9f8);box-shadow:0 14px 30px #0f858818}
@@ -62,8 +62,7 @@ button:not(:disabled):hover{transform:translateY(-1px);filter:brightness(1.02)}
     <label class="mode" id="mode2"><input type="radio" name="mode" value="2"><span class="num">2</span><div><h3>ترجمة مزدوجة مع الأصل</h3><p>إضافة مساحة ترجمة فوق كل فقرة، ثم إزاحة محتوى الصفحة أسفلها للمحافظة على الصور والمخططات دون تغطيتها.</p></div></label>
     <label class="mode" id="mode3"><input type="radio" name="mode" value="3"><span class="num">3</span><div><h3>ملف جديد: إنجليزي ثم عربي</h3><p>إعادة تنسيق النص المستخرج في صفحات جديدة؛ كل مقطع إنجليزي تتبعه ترجمته العربية مباشرة.</p></div></label>
   </div>
-  <div class="info"><b>تنبيه مهم:</b> تعمل هذه النسخة داخل المتصفح وتترجم النصوص القابلة للاستخراج من PDF عبر خدمة ترجمة إنترنت. النص الموجود داخل الصور يحتاج OCR غير مدمج في هذه النسخة. الملفات المحمية أو الممسوحة ضوئياً بالكامل قد لا تُقرأ. في الوضع الثاني تُجمع الأسطر إلى فقرات، وتُضاف مساحة ترجمة فوق كل فقرة مع إزاحة محتوى الصفحة أسفلها. قد يزداد طول الصفحة نتيجة هذه المساحات.</div>
-  <h2 class="section-title">② ارفع ملف PDF</h2>
+<h2 class="section-title">② ارفع ملف PDF</h2>
   <label class="upload" id="dropZone" for="fileInput">
     <div class="ico">📄</div>
     <h3>ارفع ملف PDF للترجمة</h3>
